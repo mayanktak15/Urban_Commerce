@@ -8,13 +8,13 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyCwehWryPRiH6W0WE3LhHAH_psasOQnCto",
-    authDomain: "shoppiecommerce-47981.firebaseapp.com",
-    projectId: "shoppiecommerce-47981",
-    storageBucket: "shoppiecommerce-47981.appspot.com",
-    messagingSenderId: "954855956591",
-    appId: "1:954855956591:web:395ec0042dcaba4ba3ad9a",
-    measurementId: "G-Y62X2LNHHG"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
